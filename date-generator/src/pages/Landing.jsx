@@ -21,6 +21,7 @@ export const Landing = () => {
   const [selectedDates, setSelectedDates] = useState([]);
 
   const displayDate = () => {
+    console.log('pressed')
     getDates()
       .then((res) => {
         const randomIndex = getRandomIndex(res.length);
