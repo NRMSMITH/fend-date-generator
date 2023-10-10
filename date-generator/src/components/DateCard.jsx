@@ -25,10 +25,9 @@ export const DateCard = ({date}) => {
 
     return (
             <>
-            <article id="datecard">
-        <h2 id="date_title">{date.title}</h2>
-        &nbsp;
-        <button onClick={deleteCard} id="deletebtn_datecard">X</button>
+            <article id="datecard" className="bg-purple-800 rounded-lg">
+        <h2 id="date_title" className="text-pink-300">{date.title}</h2>
+        <button onClick={deleteCard} id="deletebtn_datecard" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-1 py-1 text-center mr-2 mb-2">Delete</button>
         <h3 id="date_address">{date.address}</h3>
         <h3 id="date_description">{date.description}</h3>
         <h3 id="date_price">£{date.price_estimation}</h3>

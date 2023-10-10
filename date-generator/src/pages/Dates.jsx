@@ -16,6 +16,8 @@ useEffect(() => {
         setDates(res)
         setIsLoading(false)
     })
+    .catch((err) => {
+        console.log(err)})
 }, [])
 
 if(isLoading) {
